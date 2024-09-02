@@ -1,0 +1,104 @@
+.fadein-bot {
+  animation: fadeInBot 1s;
+}
+.fadein-up {
+  animation: fadeInUp 1s;
+}
+.fade-in-from-left {
+  animation: fadeInFromLeft 1s;
+}
+.fadein-right {
+  animation: fadeInRight 1s;
+}
+@keyframes fadeInBot {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.social-icon i {
+  transition: transform 0.3s;
+}
+
+.social-icon i:hover {
+  animation: rotateIcon 0.6s ease-in-out;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.social-icon .fa-linkedin {
+    color: #0077b5;
+  }
+  
+  .social-icon .fa-instagram {
+    color: #e4405f;
+  }
+  
+  .social-icon .fa-facebook {
+    color: #1877f2;
+  }
